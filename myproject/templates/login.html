@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="{{url_for('static', filename='login.css')}}">
+
+</head>
+<body>
+    <header>
+        <h1 style="color:blue">Doclock</h1>
+       
+    </header>
+    <div class="Form-box">
+        <form class="Login-form" action="/logincheck" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" name="email" required>
+                <label>Email</label>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" required>
+                <label>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox">
+                <span>
+                    <input type="checkbox" id="login-checkbox">
+                    <label for="login-checkbox">Remember Me</label>
+                </span>
+                <h5>Forget password ?</h5>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <h5 class="Register-btn">Don't have an account? <span><a href="/register">register</a></span></h5>
+
+            
+        </form>
+       
+    </div>
+</body>
+</html>

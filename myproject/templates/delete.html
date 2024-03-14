@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Background color for the entire page */
+        }
+        .container {
+            width: 800px; /* Container width */
+            margin: 150px auto; /* Adjusted margin-top to bring the container down */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 800px; /* Container width */
+            margin: 50px auto; /* Center the container horizontally */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .delete-form {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .delete-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ff5722; /* Orange button color */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .delete-btn:hover {
+            background-color: #e64a19; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Document</h1>
+        <p>Are you sure you want to delete the document?</p>
+        <form class="delete-form" action="process_delete.php" method="post">
+            <button type="submit" class="delete-btn">Delete</button>
+        </form>
+    </div>
+</body>
+</html>
