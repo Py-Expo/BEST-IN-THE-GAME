@@ -5,62 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Verification</title>
-    
     <style>
         body {
+            
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Set height to occupy full viewport height */
-            overflow: hidden; /* Prevent scrolling */
-            position: relative; /* Set position to relative to contain absolutely positioned elements */
-            
+            height: 100vh;
+            overflow: hidden;
+            position: relative; 
+            background: url('admin.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
-        video {
-            position: fixed;
-            width: auto;
-            height: 270px; /* Position video absolutely */
-            top: 0;
-            left: 0;
-            min-width: 100%; /* Cover the entire width of the viewport */
-            min-height: 100%; /* Cover the entire height of the viewport */
-            z-index: -1; /* Send video to the background */
-        }
+        
         .container {
-            width: 95%; /* Increase width for a larger container */
-            max-width: 800px; /* Limit maximum width for better readability */
-            padding: 60px; /* Increase padding for more space inside the container */
-            background-color: rgba(240, 248, 255, 0.8); /* Semi-transparent background for readability */
-            border-radius: 16px; /* Rounded corners for a modern look */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Enhanced box shadow for depth */
-            z-index: 1; /* Bring container to the front */
-            position: relative; /* Ensure container is positioned relative to keep content in front of video */
+            width: 95%;
+            max-width: 800px;
+            padding: 60px;
+            background-color: rgba(240, 248, 255, 0.8); 
+            border-radius: 16px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+            z-index: 1; 
+            position: relative;
         }
+        
         h1 {
             text-align: center;
             color: #0000ff;
             font-size: 25px;
             margin-top: 10px;
-            padding-top: 10px; /* Blue header color */
+            padding-top: 10px;
         }
+        
         p {
             text-align: center;
-            color: black; /* Description text color */
+            color: black; 
             margin-bottom: 40px;
-            font-size: 25px; /* Increased margin for better spacing */
+            font-size: 25px; 
         }
+        
         .button-container {
             text-align: center;
-            margin-top: 50px; /* Increased top margin for better alignment */
+            margin-top: 50px; 
         }
+        
         .button {
-            padding: 20px 40px; /* Larger button size for better clickability */
-            font-size: 22px; /* Font size of the button text */
-            border-radius: 8px; /* Rounded corners for buttons */
+            padding: 20px 40px; 
+            font-size: 22px;
+            border-radius: 8px; 
         }
+        
         .button:hover {
             background-color: #0056b3; /* Darker blue on hover */
         }
@@ -68,19 +65,13 @@
 </head>
 
 <body>
-    <video autoplay muted loop id="myVideo">
-        <source src="/earth.mp4" type="video/mp4">
-    </video>
-
     <div class="container">
         <h1>DOCLOCK</h1>
         <p>Welcome to DOCLOCK, your document verification portal.</p>
         <div class="button-container">
-            
             <button class="button" onclick="location.href='/login';">Log in</button>
         </div>
     </div>
 </body>
 </html>
-```
 

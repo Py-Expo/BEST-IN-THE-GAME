@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Approval</title>
+    <script>
+        {% if message %}
+            alert("{{ message }}");
+            window.location.href = "/upload";
+        {% endif %}
+    </script>
+</head>
+</html>

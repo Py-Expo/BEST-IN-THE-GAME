@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel='stylesheet' href="{{url_for('static', filename='login.css')}}">
+    <link rel='stylesheet' href="{{url_for('static', filename='register.css')}}">
 
 </head>
 <body>
     <header>
         <h1 style="color:blue">Doclock</h1>
        
-    </header><form class="Register-form">
+    </header>
+    <div class="Form-box">
+    <form class="Register-form" action="/registersave" method="post">
     <h1>Register</h1>
     <div class="input-box">
-        <input type="text" required>
+        <input type="text" name="username" required >
         <label>Username</label>
         <ion-icon name="person-outline"></ion-icon>
     </div>
     <div class="input-box">
-        <input type="text" required>
+        <input type="text" name="email" required >
         <label>Email</label>
         <ion-icon name="mail-outline"></ion-icon>
     </div>
     <div class="input-box">
-        <input type="password" required>
+        <input type="password" name="password" required >
         <label>Password</label>
         <ion-icon name="lock-closed-outline"></ion-icon>
     </div>
@@ -32,9 +34,10 @@
         <input type="checkbox" id="register-checkbox">
         <label for="register-checkbox">I agree to the terms & conditions</label>
     </div>
-    <button type="submit" class="submit-btn" onclick="location.href='/login';">Submit</button>
+    <button type="submit" class="submit-btn" onclick="/registersave">Submit</button>
     <h5 class="Login-btn">Register before ? <a href="/login">login</a></h5>
 </form>
+</div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
